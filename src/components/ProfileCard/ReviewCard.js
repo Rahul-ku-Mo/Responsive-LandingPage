@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader } from "@mui/material";
+import { Card, CardContent } from "@mui/material";
 import React from "react";
 import { Avatar } from "@mui/material";
 import { Typography } from "@mui/material";

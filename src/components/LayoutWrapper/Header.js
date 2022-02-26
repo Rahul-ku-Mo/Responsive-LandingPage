@@ -7,15 +7,15 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
+
 import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
+
 import MenuItem from "@mui/material/MenuItem";
 import Logo from "../../Images/logo.png";
 import styles from "./Header.module.css";
 import InventoryIcon from "@mui/icons-material/Inventory";
 import SearchIcon from "@mui/icons-material/Search";
-import style from "../ProfileCard/MediaCard.module.css"
+import style from "../ProfileCard/MediaCard.module.css";
 const pages = ["Help", "Account"];
 
 const Header = () => {
@@ -35,8 +35,8 @@ const Header = () => {
       sx={{
         backgroundColor: "#ffffff00",
         boxShadow: "none",
-        paddingLeft: {xl:"142px" , xs: "0px"},
-        paddingRight: {xl:"163px" , xs: "0px"},
+        paddingLeft: { xl: "142px", xs: "0px" },
+        paddingRight: { xl: "163px", xs: "0px" },
       }}
     >
       <Container maxWidth="xl">
@@ -47,7 +47,7 @@ const Header = () => {
             component="div"
             sx={{ mr: 2, display: { xs: "flex", md: "flex" } }}
           >
-            <img src={Logo} className={styles.logo} />
+            <img src={Logo} className={styles.logo} alt="home_logo"/>
           </Typography>
 
           <Box
@@ -101,7 +101,7 @@ const Header = () => {
               </Button>
             ))}
           </Box>
-          
+
           <Box
             sx={{
               flexGrow: 1,
@@ -110,17 +110,21 @@ const Header = () => {
             }}
           >
             <Box
-            sx={{
-              display: {
-                md: "none",
-                xs: "flex",
-              },
-              alignItems: "center"
-            }}
-          >
-            <SearchIcon sx={{ mr: "25px"  }} className={style.card}fontSize="small" />
-            <InventoryIcon sx={{ mr: "25px"}} fontSize="small" />
-          </Box>
+              sx={{
+                display: {
+                  md: "none",
+                  xs: "flex",
+                },
+                alignItems: "center",
+              }}
+            >
+              <SearchIcon
+                sx={{ mr: "25px" }}
+                className={style.card}
+                fontSize="small"
+              />
+              <InventoryIcon sx={{ mr: "25px" }} fontSize="small" />
+            </Box>
             <IconButton
               size="large"
               aria-controls="menu-appbar"
@@ -159,7 +163,6 @@ const Header = () => {
                 </MenuItem>
               ))}
             </Menu>
-
           </Box>
         </Toolbar>
       </Container>
