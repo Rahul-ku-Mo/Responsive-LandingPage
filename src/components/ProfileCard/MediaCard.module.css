@@ -1,0 +1,16 @@
+.card
+{
+    transition: all 250ms ease-in;
+}
+.card:hover{
+    color:#B727F3;
+    transform: scale(1.3);
+}
+
+.more{
+    transition: all 250ms ease-in;
+}
+
+.more:hover{
+    transform: scale(1.1);
+}
